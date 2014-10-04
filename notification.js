@@ -14,7 +14,7 @@ angular.module('btford.phonegap.notification',
         navigator.notification.alert(message, function () {
           var that = this,
             args = arguments;
-          
+
           $rootScope.$apply(function () {
             alertCallback.apply(that, args);
           });
@@ -24,7 +24,7 @@ angular.module('btford.phonegap.notification',
         navigator.notification.confirm(message, function () {
           var that = this,
             args = arguments;
-          
+
           $rootScope.$apply(function () {
             confirmCallback.apply(that, args);
           });
@@ -33,8 +33,8 @@ angular.module('btford.phonegap.notification',
       beep: function (times) {
         navigator.notification.beep(times);
       },
-      vibrate: function (milliseconds) {
-        navigator.notification.vibrate(milliseconds);
+      vibrate: function (timePattern) {
+        navigator.vibrate(timePattern);
       }
     };
   });
