@@ -7,5 +7,8 @@ Bower Component for using AngularJS with [PhoneGap's Notification API](http://do
 3. Include the `notification.js` script, and this script's dependencies are included in your app.
 4. Add `btford.phonegap.notification` as a module dependency to your app.
 
+## Changelog
+0.0.2 - Updated the vibrate call according to Phonegap 3.5 docs.
+
 ## License
 MIT
